@@ -2,11 +2,11 @@
 
 ## Purpose
 
-Broker consumers (RabbitMQ) responsible for receiving messages and passing them to processors.
+Broker consumers (Message Broker) responsible for receiving messages and passing them to processors.
 
 ## Typical contents
 
-- RabbitMQ consumer wrappers
+- Message Broker consumer wrappers
 - DLQ handling hooks (technical)
 - Deserialization to an envelope model
 

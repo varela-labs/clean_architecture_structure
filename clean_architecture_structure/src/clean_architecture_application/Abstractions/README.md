@@ -12,7 +12,7 @@ Ports owned by the Application layer. Outer layers implement these interfaces (a
 
 ## Out of scope
 
-- Concrete implementations (EF, RabbitMQ, HTTP clients)
+- Concrete implementations (EF, Message Broker, HTTP clients)
 - Dependency Injection registration
 
 ## Notes

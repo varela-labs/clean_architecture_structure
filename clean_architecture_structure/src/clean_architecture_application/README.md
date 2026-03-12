@@ -26,7 +26,7 @@ Application depends on **Domain**. Outer layers depend on Application.
 
 - Web controllers, middleware, filters, or transport bindings
 - EF Core DbContext/migrations/mapping configurations
-- RabbitMQ client code (consumers/publishers)
+- Message Broker client code (consumers/publishers)
 - Message broker client code and topology configuration
 - DI container registrations / composition root
 - Concrete HTTP clients, cloud SDKs, etc

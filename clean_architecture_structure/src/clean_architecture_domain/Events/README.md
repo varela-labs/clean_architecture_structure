@@ -12,7 +12,7 @@ Domain events: immutable facts that something meaningful happened in the domain.
 ## Out of scope
 
 - Broker-specific message contracts
-- RabbitMQ/SDK dependencies
+- MessageBroker/SDK dependencies
 
 ## Notes
 

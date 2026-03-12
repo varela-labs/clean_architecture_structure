@@ -41,7 +41,7 @@ Methods:
 ✅ Preferred:
 
 - `DatabaseOptions`
-- `RabbitMqOptions`
+- `MessageBrokerOptions`
 
 **Rationale:** Standard .NET naming, easy to search.
 
@@ -54,7 +54,7 @@ Methods:
 ✅ Preferred:
 
 - `DatabaseHealthChecksRegistration`
-- `RabbitMqHealthChecksRegistration`
+- `MessageBrokerHealthChecksRegistration`
 
 ---
 

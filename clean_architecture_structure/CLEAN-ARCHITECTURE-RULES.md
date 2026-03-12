@@ -405,7 +405,7 @@ Intent: Makes them replaceable.
 Implementation cues:
 
 - EF in Infrastructure.Data.
-- RabbitMQ client in Messaging/Presentation adapter.
+- Message Broker client in Messaging/Presentation adapter.
 Common violations / smells:
 - Framework base classes in Domain.
 How to verify (audit):
@@ -746,7 +746,7 @@ Implementation cues:
 - Broker libs only in outer adapter projects.
 - Use ports for publishing.
 Common violations / smells:
-- RabbitMQ.Client referenced by Application.
+- MessageBroker.Client referenced by Application.
 How to verify (audit):
 - Package reference audit.
 

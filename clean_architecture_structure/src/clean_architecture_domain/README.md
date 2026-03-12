@@ -18,12 +18,12 @@ This project is the **Domain** of the solution. It contains the **core business 
 
 ## Out of scope (What must NOT belong here)
 
-- Frameworks (ASP.NET Core, EF Core, RabbitMQ client libraries, logging frameworks, DI containers)
+- Frameworks (ASP.NET Core, EF Core, Message Broker client libraries, logging frameworks, DI containers)
 - Infrastructure details (SQL/ORM mappings, migrations, HTTP clients, message brokers)
 - Transport-specific types (ActionResult, HttpContext, DTOs tied to API contracts)
 - EF Core mappings, DbContext, migrations
 - ASP.NET Core controllers/middleware
-- RabbitMQ consumers/publishers
+- MessageBroker consumers/publishers
 - Any DI container registrations
 
 ## Dependency rule

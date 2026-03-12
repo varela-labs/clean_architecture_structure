@@ -135,5 +135,5 @@ If you adopt strongly-typed IDs:
 
 ## Quick checklist
 
-- Would this name still make sense if EF/RabbitMQ/ASP.NET disappeared?
+- Would this name still make sense if EF/Message Broker/ASP.NET disappeared?
 - Does it read like a business term from a domain glossary?

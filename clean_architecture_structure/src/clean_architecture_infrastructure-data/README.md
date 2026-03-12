@@ -28,7 +28,7 @@ This folder contains the **persistence models** (also referred to as *Persistenc
 - Use case orchestration (Application concern)
 - Domain rules/invariants (Domain concern)
 - Web/API concerns (Presentation concern)
-- Messaging broker code (RabbitMQ consumer/publisher)
+- Messaging broker code (MessageBroker consumer/publisher)
 - Domain entities/VOs (except as referenced types)
 - Application use cases and orchestration
 - HTTP controllers/middleware

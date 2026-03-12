@@ -51,7 +51,7 @@ The template follows the **Dependency Rule**: dependencies point **inward** towa
 ### Forbidden references (examples)
 
 - Domain **must not** reference Application/Infra/Presentation
-- Application **must not** reference Presentation or concrete Infra implementations (EF, RabbitMQ, SDKs)
+- Application **must not** reference Presentation or concrete Infra implementations (EF, Message Broker, SDKs)
 - Infrastructure projects **must not** be referenced by Domain
 - Presentation **must not** call EF DbContext directly (go through Application)
 
@@ -63,7 +63,7 @@ The template follows the **Dependency Rule**: dependencies point **inward** towa
 
 - Entities, Value Objects, Domain Services, Domain Events
 - Repository **interfaces** (ports) live here by decision (Option A)
-- No frameworks (no ASP.NET Core, EF Core, RabbitMQ client, logging frameworks)
+- No frameworks (no ASP.NET Core, EF Core, Message Broker client, logging frameworks)
 
 ### Application (use cases + boundary)
 
@@ -88,7 +88,7 @@ The template follows the **Dependency Rule**: dependencies point **inward** towa
 ### Presentation (delivery mechanisms)
 
 - ASP.NET Core hosting, controllers, middleware
-- RabbitMQ consumers/processors (as adapters)
+- Message Broker consumers/processors (as adapters)
 - AuthN/AuthZ, health checks, observability (metrics/tracing/logging)
 - Translates transport -> application requests; delegates business decisions to Application/Domain
 
@@ -147,7 +147,7 @@ Output:
 
 ```text
 Search for boundary leaks across layers:
-- Framework dependencies inside Domain/Application (EF Core, ASP.NET Core, RabbitMQ client, logging frameworks)
+- Framework dependencies inside Domain/Application (EF Core, ASP.NET Core, Message Broker client, logging frameworks)
 - Transport types in Application (ActionResult, HttpContext)
 - Direct DbContext usage from Presentation
 Return findings with file paths and the violating references/usings.
@@ -162,4 +162,8 @@ Return findings with file paths and the violating references/usings.
 - EF Core: <https://learn.microsoft.com/en-us/ef/core/>
 - IHttpClientFactory: <https://learn.microsoft.com/en-us/dotnet/core/extensions/httpclient-factory>
 - Health checks: <https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks>
+- Apache Kafka overview: <https://docs.confluent.io/kafka-clients/dotnet/current/overview.html>
+- Azure Service Bus (.NET) overview: <https://learn.microsoft.com/en-us/dotnet/api/overview/azure/messaging.servicebus-readme?view=azure-dotnet>
+- Redpanda (Kafka-compatible) overview: <https://docs.redpanda.com/current/develop/kafka-clients/>
 - RabbitMQ .NET overview: <https://www.rabbitmq.com/dotnet.html>
+- Apache ActiveMQ (.NET) overview: <https://activemq.apache.org/components/nms/providers/activemq/>

@@ -12,5 +12,5 @@ Messaging ports used by use cases to publish/emit notifications without coupling
 
 ## Out of scope
 
-- RabbitMQ.Client usage
+- MessageBroker.Client usage
 - Exchange/queue/routing configuration (Infrastructure/Presentation concern)

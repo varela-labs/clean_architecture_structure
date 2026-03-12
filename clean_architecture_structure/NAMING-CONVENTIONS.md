@@ -12,7 +12,7 @@ Names should:
 4. **Improve auditability**: enable automated checks (including AI audits) to spot boundary leaks and misplaced responsibilities.
 
 > Guiding principle: **Name by responsibility, not by mechanism.**  
-> Example: prefer `OrderPublisher` (role) over `RabbitMqOrderPublisher` (mechanism), unless there are multiple mechanisms in the same scope and disambiguation is required.
+> Example: prefer `OrderPublisher` (role) over `MessageBrokerOrderPublisher` (mechanism), unless there are multiple mechanisms in the same scope and disambiguation is required.
 
 ---
 
@@ -48,7 +48,7 @@ Name by **adapter responsibility**. It’s OK to be more technical here, but sti
 
 - EF: `AppDbContext`, `OrderEntityConfiguration`, `EfOrderRepository`
 - External Services: `PaymentsHttpClient`, `PaymentsGatewayAdapter`
-- Messaging: `RabbitMqPublisher` (when broker choice is essential in this project)
+- Messaging: `MessageBrokerPublisher` (when broker choice is essential in this project)
 - Serialization: `JsonSerializerAdapter`, `XmlSerializerAdapter`
 
 ### Presentation
@@ -83,7 +83,7 @@ Prefer names that express the behavior: `CorrelationIdProvider` over `Correlatio
 If the same role has multiple implementations in the same scope, disambiguate by mechanism:
 
 - `InMemoryUserRepository` vs `EfUserRepository`
-- `RabbitMqEventPublisher` vs `InProcessEventPublisher`
+- `MessageBrokerEventPublisher` vs `InProcessEventPublisher`
 
 If there is only one, prefer the role name:
 
@@ -119,6 +119,6 @@ Folder names reinforce meaning. Prefer:
 ## Review checklist (human + AI)
 
 - Can a reader tell **layer** and **role** from the type name?
-- Does the name remain correct if we swap EF ↔ another ORM or RabbitMQ ↔ another broker?
+- Does the name remain correct if we swap EF ↔ another ORM or Message Broker ↔ another broker?
 - Are use case names written in **verb + noun** form (e.g., CreateOrder)?
 - Are “transport models” (HTTP, broker message contracts) clearly labeled and kept out of Domain?
