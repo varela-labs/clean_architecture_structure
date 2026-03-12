@@ -14,9 +14,14 @@ In Clean Architecture, Infrastructure is an **outer layer**: it must not contain
 
 - DbContext and EF Core configuration
 - Entity mapping configurations
+- Persistence Models (a.k.a. EF Entities)
 - Repository implementations for Domain interfaces
 - Migrations and provider setup
 - Infrastructure query helpers
+
+### PersistenceModels
+
+This folder contains the **persistence models** (also referred to as *Persistence Models*) that represent the physical structure of the database (tables, columns, relationships) and are used by EF Core within this project. They are intentionally separated from the **Domain Entities** to prevent the domain layer from being polluted with infrastructure concerns such as auditing fields, soft delete flags, concurrency tokens, integration columns, legacy naming, or database-driven relationship structures that do not reflect real domain aggregates. Mapping between `PersistenceModels` and Domain Entities is handled within repositories or persistence adapters.
 
 ## Out of scope (must not be here)
 

@@ -14,6 +14,43 @@ Infrastructure.Data contains persistence **implementations** (EF Core, mappings,
 
 ---
 
+## Persistence Models (EF Core) — `PersistenceModels/`
+
+Types located under `PersistenceModels` represent the **database persistence structure** and must not be confused with `Domain/Entities`.
+
+Because the solution contains two conceptual “entity” layers (Domain Entities and persistence-level entities), naming must be explicit and unambiguous.
+
+### Naming Convention
+
+Persistence models must use a clear suffix:
+
+**Recommended suffix:** `Record`
+
+Examples:
+
+- `CustomerRecord`
+- `OrderRecord`
+- `InvoiceRecord`
+- `ProductRecord`
+
+Alternative acceptable suffixes (if required by team standards):
+
+- `DbModel` (e.g., `CustomerDbModel`)
+- `EfModel` (e.g., `OrderEfModel`)
+- `Row` (e.g., `InvoiceRow`)
+
+### Rules
+
+- Domain Entities must NOT use a suffix and must live in `Domain/Entities`.
+- Persistence models MUST use a suffix and must live in `InfrastructureData/PersistenceModels`.
+- Fluent API configuration classes should mirror the name:
+  - `CustomerRecordConfiguration`
+  - `OrderRecordConfiguration`
+
+This convention ensures architectural clarity and prevents ambiguity when navigating or refactoring the solution.
+
+---
+
 ## EF mappings
 
 **Rule:** Suffix with `Configuration` (or `EntityConfiguration`) for `IEntityTypeConfiguration<T>` implementations.
