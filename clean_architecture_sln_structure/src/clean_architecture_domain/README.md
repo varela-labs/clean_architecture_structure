@@ -33,5 +33,3 @@ The Domain **depends on nothing** outside itself. Other projects may depend on D
 ## Naming conventions
 
 Folder names follow common Clean Architecture + DDD terminology (Entity, Value Object, Domain Event, etc.). Names are chosen to make the architecture "scream" business intent rather than framework details.
-
-### Last updated: 2026-03-11
