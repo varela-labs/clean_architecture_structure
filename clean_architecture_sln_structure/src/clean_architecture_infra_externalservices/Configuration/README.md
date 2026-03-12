@@ -20,4 +20,4 @@ Keep actual binding/registration in Infra-IoC/Presentation; this folder holds mo
 
 ## References
 
-- https://learn.microsoft.com/en-us/dotnet/core/extensions/options
+- <https://learn.microsoft.com/en-us/dotnet/core/extensions/options>

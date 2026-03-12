@@ -20,6 +20,6 @@ Resilience is a technical concern; choose policies per client and document excep
 
 ## References
 
-- https://learn.microsoft.com/en-us/dotnet/core/resilience/
-- https://www.thepollyproject.org/
-- https://github.com/App-vNext/Polly
+- <https://learn.microsoft.com/en-us/dotnet/core/resilience/>
+- <https://www.thepollyproject.org/>
+- <https://github.com/App-vNext/Polly>

@@ -36,12 +36,12 @@ Infrastructure depends on Domain/Application. Inner layers must not depend on th
 
 ## Recommended references
 
-- Clean Architecture (Dependency Rule): https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
-- IHttpClientFactory: https://learn.microsoft.com/en-us/dotnet/core/extensions/httpclient-factory
-- .NET resilience overview: https://learn.microsoft.com/en-us/dotnet/core/resilience/
-- Polly (resilience library): https://www.thepollyproject.org/ / https://github.com/App-vNext/Polly
-- OpenTelemetry .NET: https://opentelemetry.io/docs/languages/net/
-- Logging in .NET: https://learn.microsoft.com/en-us/dotnet/core/extensions/logging
-- Options pattern: https://learn.microsoft.com/en-us/dotnet/core/extensions/options
+- Clean Architecture (Dependency Rule): <https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html>
+- IHttpClientFactory: <https://learn.microsoft.com/en-us/dotnet/core/extensions/httpclient-factory>
+- .NET resilience overview: <https://learn.microsoft.com/en-us/dotnet/core/resilience/>
+- Polly (resilience library): <https://www.thepollyproject.org/> / <https://github.com/App-vNext/Polly>
+- OpenTelemetry .NET: <https://opentelemetry.io/docs/languages/net/>
+- Logging in .NET: <https://learn.microsoft.com/en-us/dotnet/core/extensions/logging>
+- Options pattern: <https://learn.microsoft.com/en-us/dotnet/core/extensions/options>
 
 ### Last updated: 2026-03-11

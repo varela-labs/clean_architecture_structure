@@ -20,5 +20,5 @@ Expose telemetry via standard instrumentation so hosting layer can export it to 
 
 ## References
 
-- https://opentelemetry.io/docs/languages/net/
-- https://learn.microsoft.com/en-us/dotnet/core/extensions/logging
+- <https://opentelemetry.io/docs/languages/net/>
+- <https://learn.microsoft.com/en-us/dotnet/core/extensions/logging>
