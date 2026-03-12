@@ -39,12 +39,6 @@ NAMING RULESET
 - Repository implementations: MUST end with 'Repository'; prefix with mechanism if multiple (EfOrderRepository).
 - Outbox types: SHOULD make pattern explicit (OutboxMessage, OutboxDispatcher).
 
-## Infrastructure.Caching
-
-- Providers: SHOULD end with 'CacheProvider' (MemoryCacheProvider).
-- Key builders: SHOULD end with 'CacheKeyBuilder'.
-- Decorators: SHOULD end with 'Decorator' (MetricsCacheProviderDecorator).
-
 ## Infrastructure.Externalservices
 
 - Typed clients: SHOULD end with 'Client' (PaymentsHttpClient / CustomerProfileClient).
@@ -56,7 +50,7 @@ NAMING RULESET
 ## Infrastructure.Ioc
 
 - Registration entry points: use 'AddXyz' method naming; classes like 'DependencyInjectionConfiguration' or '*Extensions'.
-- Modules: MUST end with 'Module' (DataModule, CachingModule).
+- Modules: MUST end with 'Module' (DataModule, ServiceModule).
 - Options POCOs: SHOULD end with 'Options' (DatabaseOptions).
 
 ## Presentation

@@ -6,7 +6,7 @@ Health check registration wiring (not the hosting endpoints).
 
 ## Typical contents
 
-- IHealthChecksBuilder registrations for DB/cache/external endpoints
+- IHealthChecksBuilder registrations for DB/external endpoints
 - Named health checks and tags
 
 ## Out of scope

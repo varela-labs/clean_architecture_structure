@@ -15,7 +15,6 @@ Methods:
 
 - `AddInfrastructure(...)`
 - `AddPersistence(...)`
-- `AddCaching(...)`
 
 **Rationale:** Hosting layer should read like a checklist.
 
@@ -28,7 +27,6 @@ Methods:
 ✅ Preferred:
 
 - `DataModule`
-- `CachingModule`
 - `ExternalServicesModule`
 - `MessagingModule`
 

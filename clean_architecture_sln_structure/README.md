@@ -4,7 +4,7 @@ This repository describes a Clean Architecture template built with **.NET (lates
 
 - HTTP APIs (ASP.NET Core)
 - Messaging (RabbitMQ)
-- Modular Infrastructure (EF Core, caching, external services)
+- Modular Infrastructure (EF Core, external services)
 - SOLID + small methods + clear naming
 
 > Goal: Keep business policy stable and independent from delivery and infrastructure details.
@@ -17,7 +17,6 @@ This repository describes a Clean Architecture template built with **.NET (lates
 clean_architecture_domain                  (Domain / Core Policy)
 clean_architecture_application             (Application / Use Cases + Ports)
 clean_architecture_infra-data              (Infrastructure / Persistence adapters)
-clean_architecture_infra-caching           (Infrastructure / Caching adapters)
 clean_architecture_infra-externalservices  (Infrastructure / External integrations)
 clean_architecture_infra-ioc               (Infrastructure / Composition Root)
 clean_architecture_presentation            (Presentation / Hosting + Delivery)
@@ -37,8 +36,6 @@ The template follows the **Dependency Rule**: dependencies point **inward** towa
                  |
                  +--> [Infra-Data] --------> [Domain]
                  |
-                 +--> [Infra-Caching] -----> [Domain]
-                 |
                  +--> [Infra-ExternalServices]  (implements ports owned by inner layers)
 ```
 
@@ -47,7 +44,6 @@ The template follows the **Dependency Rule**: dependencies point **inward** towa
 - `clean_architecture_domain` references: **none**
 - `clean_architecture_application` references: `Domain` (and optionally inner contracts projects if you split later)
 - `clean_architecture_infra-data` references: `Domain` (and `Application` only if it must implement application ports)
-- `clean_architecture_infra-caching` references: `Domain` (and `Application` only if it must implement application ports)
 - `clean_architecture_infra-externalservices` references: `Application`/`Domain` ports it implements
 - `clean_architecture_infra-ioc` references: `Domain`, `Application`, and all Infra projects (it wires everything)
 - `clean_architecture_presentation` references: `Application`, `Infra-IoC`
@@ -80,7 +76,6 @@ The template follows the **Dependency Rule**: dependencies point **inward** towa
 
 - Implements ports from Domain/Application:
   - EF Core repositories, DbContext, mappings, migrations
-  - Cache providers
   - HTTP/SOAP/SDK adapters to external systems
 - Contains technical policies (timeouts, retries, serialization) but not business policy
 

@@ -2,12 +2,11 @@
 
 ## Purpose
 
-Registration modules per infrastructure capability (Data, Caching, ExternalServices, Messaging).
+Registration modules per infrastructure capability (Data, ExternalServices, Messaging).
 
 ## Typical contents
 
 - DataModule (register DbContextFactory, repositories, unit of work)
-- CachingModule (register cache providers)
 - ExternalServicesModule (register typed clients)
 - MessagingModule (register publishers/consumers adapters when applicable)
 

@@ -29,7 +29,7 @@ Application depends on **Domain**. Outer layers depend on Application.
 - RabbitMQ client code (consumers/publishers)
 - Message broker client code and topology configuration
 - DI container registrations / composition root
-- Concrete HTTP clients, cloud SDKs, caches
+- Concrete HTTP clients, cloud SDKs, etc
 
 ## Recommended references
 

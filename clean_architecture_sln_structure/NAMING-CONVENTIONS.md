@@ -47,7 +47,6 @@ Name by **use case intent** and **request/handler role**.
 Name by **adapter responsibility**. It’s OK to be more technical here, but still prefer role-first naming.
 
 - EF: `AppDbContext`, `OrderEntityConfiguration`, `EfOrderRepository`
-- Caching: `MemoryCacheProvider`, `DistributedCacheProvider`
 - External Services: `PaymentsHttpClient`, `PaymentsGatewayAdapter`
 - Messaging: `RabbitMqPublisher` (when broker choice is essential in this project)
 - Serialization: `JsonSerializerAdapter`, `XmlSerializerAdapter`

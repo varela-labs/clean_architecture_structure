@@ -10,7 +10,7 @@ reference DI containers or perform service location.
 
 - Register services in the DI container (ports -> adapters).
 - Bind configuration options (settings POCOs) and expose them via interfaces if needed.
-- Centralize module-based registrations (Data, Caching, ExternalServices, Messaging adapters).
+- Centralize module-based registrations (Data, ExternalServices, Messaging adapters).
 - Provide extension methods used by the hosting layer (Presentation) to add dependencies.
 
 ## Typical contents
@@ -24,10 +24,9 @@ reference DI containers or perform service location.
 
 - Business policy (Domain/Application)
 - EF Core DbContext, repository implementations (Infra-Data)
-- Cache provider implementations (Infra-Caching)
 - External HTTP clients/SDK implementations (Infra-ExternalServices)
 - Web routing/controllers/middleware (Presentation)
-- Concrete implementations (repositories, caches, clients) — those live in other Infrastructure projects
+- Concrete implementations (repositories, clients) — those live in other Infrastructure projects
 - Use case code (Application) and domain rules (Domain)
 
 ## Dependency rule
