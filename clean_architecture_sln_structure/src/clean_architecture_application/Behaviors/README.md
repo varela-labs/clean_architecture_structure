@@ -17,4 +17,4 @@ Cross-cutting application policies implemented as pipeline behaviors (commonly w
 
 ## References
 
-- https://github.com/LuckyPennySoftware/MediatR
+- <https://github.com/LuckyPennySoftware/MediatR>
