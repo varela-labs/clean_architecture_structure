@@ -36,11 +36,9 @@ Domain/Application must not depend on this project.
 
 ## Recommended references
 
-- Clean Architecture (Dependency Rule): https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
-- EF Core documentation: https://learn.microsoft.com/en-us/ef/core/
-- IDbContextFactory guidance: https://learn.microsoft.com/en-us/ef/core/dbcontext-configuration/#using-idbcontextfactory
-- EF Core migrations: https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/
-- Npgsql EF Core provider: https://www.npgsql.org/efcore/
-- Repository pattern (general): https://learn.microsoft.com/en-us/azure/architecture/patterns/repository
-
-### Last updated: 2026-03-11
+- Clean Architecture (Dependency Rule): <https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html>
+- EF Core documentation: <https://learn.microsoft.com/en-us/ef/core/>
+- IDbContextFactory guidance: <https://learn.microsoft.com/en-us/ef/core/dbcontext-configuration/#using-idbcontextfactory>
+- EF Core migrations: <https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/>
+- Npgsql EF Core provider: <https://www.npgsql.org/efcore/>
+- Repository pattern (general): <https://learn.microsoft.com/en-us/azure/architecture/patterns/repository>

@@ -20,4 +20,4 @@ Use typed clients and centralize policies (timeouts/retries) in one place.
 
 ## References
 
-- https://learn.microsoft.com/en-us/dotnet/core/extensions/httpclient-factory
+- <https://learn.microsoft.com/en-us/dotnet/core/extensions/httpclient-factory>

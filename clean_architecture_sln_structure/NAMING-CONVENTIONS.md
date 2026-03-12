@@ -1,6 +1,6 @@
 # Solution-wide - Naming conventions
 
-This document defines naming conventions for the **CleanArchitectureAnalysis** solution.
+This document defines naming conventions for the **Clean Architecture** solution.
 
 ## Goals
 

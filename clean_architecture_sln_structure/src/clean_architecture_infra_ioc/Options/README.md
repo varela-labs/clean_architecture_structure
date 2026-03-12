@@ -7,7 +7,7 @@ Strongly-typed options models and (optional) validators used for DI wiring.
 ## Typical contents
 
 - Settings POCOs bound from configuration
-- Options validation (IValidateOptions<T>)
+- Options validation (`IValidateOptions<T>`)
 
 ## Out of scope
 

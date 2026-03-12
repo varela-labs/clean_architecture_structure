@@ -37,5 +37,3 @@ Application depends on **Domain**. Outer layers depend on Application.
 - MediatR (Mediator pattern for use-case dispatching): <https://github.com/LuckyPennySoftware/MediatR> / <https://mediatr.io/>
 - FluentValidation (validation rules and patterns): <https://docs.fluentvalidation.net/>
 - AutoMapper (mapping between models): <https://docs.automapper.io/en/stable/> / <https://github.com/LuckyPennySoftware/AutoMapper>
-
-### Last updated: 2026-03-11

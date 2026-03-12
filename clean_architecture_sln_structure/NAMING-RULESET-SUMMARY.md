@@ -3,7 +3,6 @@
 > This file contains naming rules aligned with Clean Architecture principles.
 
 NAMING RULESET
-Last updated: 2026-03-11
 
 ## General
 

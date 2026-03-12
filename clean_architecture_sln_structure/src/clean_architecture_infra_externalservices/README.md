@@ -43,5 +43,3 @@ Infrastructure depends on Domain/Application. Inner layers must not depend on th
 - OpenTelemetry .NET: <https://opentelemetry.io/docs/languages/net/>
 - Logging in .NET: <https://learn.microsoft.com/en-us/dotnet/core/extensions/logging>
 - Options pattern: <https://learn.microsoft.com/en-us/dotnet/core/extensions/options>
-
-### Last updated: 2026-03-11

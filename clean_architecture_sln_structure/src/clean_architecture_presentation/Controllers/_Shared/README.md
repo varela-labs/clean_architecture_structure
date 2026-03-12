@@ -16,5 +16,3 @@ Shared controller utilities kept small and focused (base controller, shared help
 ## Notes
 
 Prefer composition over deep controller inheritance.
-
-

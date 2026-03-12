@@ -18,5 +18,3 @@ Message processors translate incoming messages into Application requests and dis
 ## Notes
 
 Aim for small processor methods: validate envelope -> map -> dispatch -> map outcome.
-
-
