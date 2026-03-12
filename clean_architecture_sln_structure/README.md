@@ -3,7 +3,7 @@
 This repository describes a Clean Architecture template built with **.NET (latest LTS)** and designed for internal services that use:
 
 - HTTP APIs (ASP.NET Core)
-- Messaging (RabbitMQ)
+- Messaging (Kafka, RabbitMQ, Redpanda, ActiveMQ)
 - Modular Infrastructure (EF Core, external services)
 - SOLID + small methods + clear naming
 
@@ -14,12 +14,12 @@ This repository describes a Clean Architecture template built with **.NET (lates
 ## 1) Project map
 
 ```text
-clean_architecture_domain                  (Domain / Core Policy)
-clean_architecture_application             (Application / Use Cases + Ports)
-clean_architecture_infra-data              (Infrastructure / Persistence adapters)
-clean_architecture_infra-externalservices  (Infrastructure / External integrations)
-clean_architecture_infra-ioc               (Infrastructure / Composition Root)
-clean_architecture_presentation            (Presentation / Hosting + Delivery)
+clean_architecture_domain                     (Domain / Core Policy)
+clean_architecture_application                (Application / Use Cases + Ports)
+clean_architecture_infrastructure-data        (Infrastructure / Persistence adapters)
+clean_architecture_infrastructure-external    (Infrastructure / External integrations)
+clean_architecture_infrastructure-ioc         (Infrastructure / Composition Root)
+clean_architecture_presentation               (Presentation / Hosting + Delivery)
 ```
 
 ---
@@ -32,20 +32,20 @@ The template follows the **Dependency Rule**: dependencies point **inward** towa
 [Presentation]  --->  [Application]  --->  [Domain]
       |                    ^
       |                    |
-      +----> [Infra-IoC] ---+
+      +----> [Infrastructure-IoC] ---+
                  |
-                 +--> [Infra-Data] --------> [Domain]
+                 +--> [Infrastructure-Data] --------> [Domain]
                  |
-                 +--> [Infra-ExternalServices]  (implements ports owned by inner layers)
+                 +--> [Infrastructure-External]  (implements ports owned by inner layers)
 ```
 
 ### Allowed references (ProjectReference)
 
 - `clean_architecture_domain` references: **none**
 - `clean_architecture_application` references: `Domain` (and optionally inner contracts projects if you split later)
-- `clean_architecture_infra-data` references: `Domain` (and `Application` only if it must implement application ports)
-- `clean_architecture_infra-externalservices` references: `Application`/`Domain` ports it implements
-- `clean_architecture_infra-ioc` references: `Domain`, `Application`, and all Infra projects (it wires everything)
+- `clean_architecture_infrastructure-data` references: `Domain` (and `Application` only if it must implement application ports)
+- `clean_architecture_infrastructure-external` references: `Application`/`Domain` ports it implements
+- `clean_architecture_infrastructure-ioc` references: `Domain`, `Application`, and all Infra projects (it wires everything)
 - `clean_architecture_presentation` references: `Application`, `Infra-IoC`
 
 ### Forbidden references (examples)
