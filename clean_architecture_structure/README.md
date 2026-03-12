@@ -113,9 +113,9 @@ This file is intended to be:
 ### 5.1 Recommended workflow
 
 1. Attach `clean_architecture_rules.md` in your AI session.
-2. Ask Q to first map project references (csproj graph).
-3. Ask Q to audit each project against the ruleset.
-4. Require Q to output:
+2. Ask AI to first map project references (csproj graph).
+3. Ask AI to audit each project against the ruleset.
+4. Require AI to output:
    - Violations (Rule IDs)
    - Evidence (file paths)
    - Fix suggestions limited to the scope of the rule
