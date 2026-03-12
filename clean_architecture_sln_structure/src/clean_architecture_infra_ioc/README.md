@@ -37,8 +37,8 @@ Inner layers must not reference this project.
 
 ## Recommended references
 
-- Clean Architecture (Dependency Rule): https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
-- .NET Dependency Injection: https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection
-- Options pattern: https://learn.microsoft.com/en-us/dotnet/core/extensions/options
-- Composition Root concept (Martin Fowler): https://martinfowler.com/articles/injection.html
-- ASP.NET Core DI fundamentals: https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection
+- Clean Architecture (Dependency Rule): <https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html>
+- .NET Dependency Injection: <https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection>
+- Options pattern: <https://learn.microsoft.com/en-us/dotnet/core/extensions/options>
+- Composition Root concept (Martin Fowler): <https://martinfowler.com/articles/injection.html>
+- ASP.NET Core DI fundamentals: <https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection>
