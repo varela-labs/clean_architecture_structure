@@ -162,9 +162,9 @@ Return findings with file paths and the violating references/usings.
 
 ## 6) References
 
-- Clean Architecture overview (Dependency Rule & circles): https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
-- .NET Dependency Injection: https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection
-- EF Core: https://learn.microsoft.com/en-us/ef/core/
-- IHttpClientFactory: https://learn.microsoft.com/en-us/dotnet/core/extensions/httpclient-factory
-- Health checks: https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks
-- RabbitMQ .NET overview: https://www.rabbitmq.com/dotnet.html
+- Clean Architecture overview (Dependency Rule & circles): <https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html>
+- .NET Dependency Injection: <https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection>
+- EF Core: <https://learn.microsoft.com/en-us/ef/core/>
+- IHttpClientFactory: <https://learn.microsoft.com/en-us/dotnet/core/extensions/httpclient-factory>
+- Health checks: <https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks>
+- RabbitMQ .NET overview: <https://www.rabbitmq.com/dotnet.html>

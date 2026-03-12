@@ -38,13 +38,13 @@ Presentation depends on Application (and the IoC wiring project). Inner layers m
 
 ## Recommended references
 
-- Clean Architecture (Dependency Rule): https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
-- ASP.NET Core fundamentals: https://learn.microsoft.com/en-us/aspnet/core/
-- Controllers/Web API: https://learn.microsoft.com/en-us/aspnet/core/web-api/
-- Middleware: https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/
-- Hosted services: https://learn.microsoft.com/en-us/aspnet/core/fundamentals/host/hosted-services
-- Health checks: https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks
-- Authentication: https://learn.microsoft.com/en-us/aspnet/core/security/authentication/ / JWT Bearer: https://learn.microsoft.com/en-us/aspnet/core/security/authentication/jwtbearer
-- RabbitMQ .NET client overview: https://www.rabbitmq.com/dotnet.html
-- prometheus-net: https://github.com/prometheus-net/prometheus-net
-- OpenTelemetry .NET: https://opentelemetry.io/docs/languages/net/
+- Clean Architecture (Dependency Rule): <https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html>
+- ASP.NET Core fundamentals: <https://learn.microsoft.com/en-us/aspnet/core/>
+- Controllers/Web API: <https://learn.microsoft.com/en-us/aspnet/core/web-api/>
+- Middleware: <https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/>
+- Hosted services: <https://learn.microsoft.com/en-us/aspnet/core/fundamentals/host/hosted-services>
+- Health checks: <https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks>
+- Authentication: <https://learn.microsoft.com/en-us/aspnet/core/security/authentication/> / JWT Bearer: <https://learn.microsoft.com/en-us/aspnet/core/security/authentication/jwtbearer>
+- RabbitMQ .NET client overview: <https://www.rabbitmq.com/dotnet.html>
+- prometheus-net: <https://github.com/prometheus-net/prometheus-net>
+- OpenTelemetry .NET: <https://opentelemetry.io/docs/languages/net/>

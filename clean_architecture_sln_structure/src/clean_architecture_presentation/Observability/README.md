@@ -21,5 +21,5 @@ Instrument at boundaries: HTTP and message processing are excellent points for t
 
 ## References
 
-- https://opentelemetry.io/docs/languages/net/
-- https://github.com/prometheus-net/prometheus-net
+- <https://opentelemetry.io/docs/languages/net/>
+- <https://github.com/prometheus-net/prometheus-net>
