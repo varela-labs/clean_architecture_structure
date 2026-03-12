@@ -33,9 +33,9 @@ Application depends on **Domain**. Outer layers depend on Application.
 
 ## Recommended references
 
-- Clean Architecture (The Dependency Rule): https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
-- MediatR (Mediator pattern for use-case dispatching): https://github.com/LuckyPennySoftware/MediatR / https://mediatr.io/
-- FluentValidation (validation rules and patterns): https://docs.fluentvalidation.net/
-- AutoMapper (mapping between models): https://docs.automapper.io/en/stable/ / https://github.com/LuckyPennySoftware/AutoMapper
+- Clean Architecture (The Dependency Rule): <https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html>
+- MediatR (Mediator pattern for use-case dispatching): <https://github.com/LuckyPennySoftware/MediatR> / <https://mediatr.io/>
+- FluentValidation (validation rules and patterns): <https://docs.fluentvalidation.net/>
+- AutoMapper (mapping between models): <https://docs.automapper.io/en/stable/> / <https://github.com/LuckyPennySoftware/AutoMapper>
 
 ### Last updated: 2026-03-11
